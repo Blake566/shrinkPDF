@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShrinkPDF Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f3f6fb;
+      --card: rgba(255, 255, 255, 0.88);
+      --text: #152033;
+      --muted: #5b677a;
+      --accent: #1567e8;
+      --border: rgba(21, 32, 51, 0.10);
+      --shadow: 0 16px 48px rgba(21, 32, 51, 0.10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11161d;
+        --card: rgba(25, 31, 41, 0.92);
+        --text: #f3f6fb;
+        --muted: #b5c0d1;
+        --accent: #6ea7ff;
+        --border: rgba(255, 255, 255, 0.10);
+        --shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(76, 140, 255, 0.24), transparent 36%),
+        linear-gradient(180deg, var(--bg), var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero {
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: block;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 6px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 44rem;
+      margin-bottom: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 24px;
+    }
+
+    .eyebrow {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    li + li {
+      margin-top: 0.5rem;
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      background: rgba(127, 127, 127, 0.12);
+      padding: 0.15rem 0.35rem;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="brand">
+        <img class="icon" src="../shrinkpdf-icon.png" alt="ShrinkPDF app icon">
+        <div>
+          <h1>ShrinkPDF Support</h1>
+          <p class="subtitle">Help for compressing PDFs on macOS, choosing output settings, and resolving common file access issues.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="eyebrow">Contact</div>
+        <h2>Need help?</h2>
+        <p>If you need support with ShrinkPDF, email:</p>
+        <p><a href="mailto:apblk2026@gmail.com">apblk2026@gmail.com</a></p>
+        <p>Please include your macOS version, the PDF you were working with, and a short description of the problem.</p>
+      </article>
+
+      <article class="card">
+        <div class="eyebrow">How It Works</div>
+        <h2>Getting started</h2>
+        <ul>
+          <li>Open ShrinkPDF.</li>
+          <li>Add one or more PDF files.</li>
+          <li>Choose an output folder.</li>
+          <li>Select a compression quality.</li>
+          <li>Click <code>Compress PDFs</code>.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="eyebrow">Common Issues</div>
+        <h2>Files or folders cannot be accessed</h2>
+        <p>On macOS, ShrinkPDF needs access to files you select and the output folder you choose. If saving fails:</p>
+        <ul>
+          <li>Select the PDF files again from inside the app.</li>
+          <li>Choose the output folder again.</li>
+          <li>Make sure the destination has enough free space.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="eyebrow">Compression Notes</div>
+        <h2>Why some PDFs may not shrink much</h2>
+        <p>Some PDFs already contain optimized text and vector content. In those cases, ShrinkPDF may preserve the original file or reduce size only slightly. Image-heavy scanned PDFs usually compress more.</p>
+      </article>
+    </section>
+
+    <p class="footer">ShrinkPDF for macOS</p>
+  </main>
+</body>
+</html>
 
