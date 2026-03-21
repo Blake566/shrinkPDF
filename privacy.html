@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShrinkPDF Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f3f6fb;
+      --card: rgba(255, 255, 255, 0.88);
+      --text: #152033;
+      --muted: #5b677a;
+      --accent: #1567e8;
+      --border: rgba(21, 32, 51, 0.10);
+      --shadow: 0 16px 48px rgba(21, 32, 51, 0.10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11161d;
+        --card: rgba(25, 31, 41, 0.92);
+        --text: #f3f6fb;
+        --muted: #b5c0d1;
+        --accent: #6ea7ff;
+        --border: rgba(255, 255, 255, 0.10);
+        --shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(76, 140, 255, 0.24), transparent 36%),
+        linear-gradient(180deg, var(--bg), var(--bg));
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero { padding: 32px; margin-bottom: 20px; }
+    .card { padding: 24px 28px; }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: block;
+    }
+
+    h1, h2, p { margin-top: 0; }
+
+    h1 {
+      margin-bottom: 6px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin-top: 1.6rem;
+      margin-bottom: 0.6rem;
+      font-size: 1.1rem;
+    }
+
+    .subtitle,
+    .muted,
+    .footer {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    ul {
+      margin-top: 0.4rem;
+      padding-left: 1.1rem;
+    }
+
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="brand">
+        <img class="icon" src="../shrinkpdf-icon.png" alt="ShrinkPDF app icon">
+        <div>
+          <h1>Privacy Policy</h1>
+          <p class="subtitle">ShrinkPDF for macOS</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="muted">Effective date: March 22, 2026</p>
+
+      <p>ShrinkPDF is designed to compress PDF files locally on your Mac. We keep data collection to a minimum.</p>
+
+      <h2>Information We Collect</h2>
+      <p>ShrinkPDF does not require account creation and does not collect personal information through the app itself.</p>
+
+      <h2>Files You Select</h2>
+      <p>ShrinkPDF accesses only the PDF files and output folder you explicitly select in the app. These files are used only to perform compression on your device.</p>
+
+      <h2>How Your Data Is Used</h2>
+      <ul>
+        <li>To open PDF files you select</li>
+        <li>To compress PDF content on your Mac</li>
+        <li>To save output files to the folder you choose</li>
+      </ul>
+
+      <h2>Data Sharing</h2>
+      <p>ShrinkPDF does not sell, rent, or share your files with third parties.</p>
+
+      <h2>Data Storage</h2>
+      <p>PDF processing is performed locally on your device. Your selected files are not uploaded by ShrinkPDF as part of normal app use.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about this Privacy Policy, contact <a href="mailto:apblk2026@gmail.com">apblk2026@gmail.com</a>.</p>
+
+      <p><a href="./index.html">Back to Support</a></p>
+    </section>
+
+    <p class="footer">ShrinkPDF for macOS • <a href="./index.html">Support</a></p>
+  </main>
+</body>
+</html>
